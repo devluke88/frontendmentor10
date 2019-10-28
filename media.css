@@ -1,12 +1,54 @@
 @media (min-width: 768px) {
     
+  
 }
 
 @media (min-width: 1024px) {
-    
+
+    form {
+        flex-direction: row;
+        height: auto;
+        justify-content: space-between;
+        max-width: 636px;
+        margin: 0 auto;
+        margin-bottom: 15px;  
+    }
+
+    input {
+        flex: 2; 
+    }
+
+    .logo {
+        height: 2.7rem;
+    }
+
+    .header {
+        font-size: 4.6rem;
+    }
+
+    form {
+        font-size: 1.8rem;
+    }
+    .btn {
+        padding: 1.8rem 6.2rem;
+        border-radius: 40px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-left: 20px;
+    }
+
+    #email {
+        padding: 1.8rem 0rem 1.8rem 3.3rem;
+        border-radius: 40px;
+        font-size: 1.5rem;
+    }
+
+    .sub-header {
+        font-size: 1.9rem;
+    }
 }
 
 @media (min-width: 1440px) {
 
-  
+    
 }
