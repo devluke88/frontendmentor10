@@ -19,8 +19,9 @@
     <h1 class="header">We are launching <span id="soon">soon!</span></h1>
     <h2 class="sub-header">Subscribe and get notified</h2>
     
-    <form action="">
-        <input type="email" id="email">
+    <form action="submit">
+        <input type="email" id="email" name="email" class="input-alert" placeholder="Your email address..." required>
+        <label name="email" for="email" class="label">Email</label>
         <button class="btn">Notify Me</button>
     </form>
     <div class="dashboard">
@@ -33,10 +34,10 @@
       <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
       <a href="#" class="insta"><i class="fab fa-instagram"></i></a>
     </div>
-      <p>&copy; Copyright Ping. All rights reserved.</p>
+      <p class="copy">&copy; Copyright Ping. All rights reserved.</p>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">lukenow.com</a>.
     </p>
   </footer>
 </body>
