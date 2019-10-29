@@ -1,21 +1,20 @@
-@media (min-width: 768px) {
-    
-  
+@media (min-width: 375px) {
+
+    form {
+        max-width: 636px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
 
     form {
         flex-direction: row;
         height: auto;
         justify-content: space-between;
-        max-width: 636px;
-        margin: 0 auto;
-        margin-bottom: 15px;  
-    }
-
-    input {
-        flex: 2; 
+        font-size: 1.8rem;
+        flex-wrap: wrap;
     }
 
     .logo {
@@ -26,29 +25,32 @@
         font-size: 4.6rem;
     }
 
-    form {
-        font-size: 1.8rem;
-    }
     .btn {
         padding: 1.8rem 6.2rem;
         border-radius: 40px;
         font-size: 1.5rem;
         font-weight: 600;
         margin-left: 20px;
+        order: 1;
+        flex: 33%;
     }
 
     #email {
         padding: 1.8rem 0rem 1.8rem 3.3rem;
         border-radius: 40px;
         font-size: 1.5rem;
+        order: 0;
+        flex: 63%; 
+    }
+
+    #error { 
+        order: 2; 
+        flex: 100%;
+        text-align: left;
+        margin-left: 3rem;
     }
 
     .sub-header {
         font-size: 1.9rem;
     }
-}
-
-@media (min-width: 1440px) {
-
-    
 }
