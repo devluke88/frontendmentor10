@@ -19,10 +19,11 @@
     <h1 class="header">We are launching <span id="soon">soon!</span></h1>
     <h2 class="sub-header">Subscribe and get notified</h2>
     
-    <form action="submit">
-        <input type="email" id="email" name="email" class="input-alert" placeholder="Your email address..." required>
+    <form action="submit" class="form" method="#">
+        <input type="email" id="email" onBlur="document.getElementById('error').style.display = 'none'" name="email" class="input-alert" placeholder="Your email address..." required>
+        <p id="error">Please provide a valid email address</p>
         <label name="email" for="email" class="label">Email</label>
-        <button class="btn">Notify Me</button>
+        <button class="btn" type="submit" onClick="validation()">Notify Me</button>
     </form>
     <div class="dashboard">
       <img src="images/illustration-dashboard.png" alt="dashboard" class="dashboard-img">
@@ -30,15 +31,31 @@
   </div>
   <footer>
     <div class="social">
-      <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
-      <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-      <a href="#" class="insta"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="fb"><span class="sr-only">Facebook</span><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="twitter"><span class="sr-only">Twitter</span><i class="fab fa-twitter"></i></a>
+      <a href="#" class="insta"><span class="sr-only">Insta</span><i class="fab fa-instagram"></i></a>
     </div>
       <p class="copy">&copy; Copyright Ping. All rights reserved.</p>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">lukenow.com</a>.
+      Coded by <a href="#">www.lukenow.com</a>.
     </p>
   </footer>
+
+<script>
+function validation() {
+  // Email Validation
+  var email = document.getElementById("email").innerHTML;
+  var errorMsg = document.getElementById("error");
+  
+    if ((/(.+)@(.+){2,}\.(.+){2,}/.test(email)) || email=="" || email==null) {
+      errorMsg.style.display = "block";
+    }
+    else {
+      errorMsg.style.display = "none";
+    }
+  }
+</script>
+
 </body>
 </html>
