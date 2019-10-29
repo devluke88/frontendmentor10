@@ -1,7 +1,4 @@
 :root {
-
-
-
   /*Primary*/
   --Blue: hsl(223, 87%, 63%);
   /*Secondary*/
@@ -71,7 +68,7 @@ form {
   justify-content: space-between;
   margin-bottom: 4.1rem;
   padding: 0 1.9rem;
-  height: 9.5rem;
+  height: auto;
  
 }
 
@@ -79,10 +76,21 @@ form {
   border: 1px solid var(--Pale-Blue);
   border-radius: 20px;
   padding: 1.2rem 0rem 1.2rem 3.3rem;
+  margin-bottom: 1rem;
 }
 
 #email::placeholder {
   color: var(--Pale-Blue);
+}
+
+#error {
+  color: var(--Light-Red);
+  font-style: italic;
+  font-size: 1.2rem;
+  align-self: center;
+  margin: 0rem 0 2.5rem 0;
+  font-weight: 600;
+  display: none;
 }
 
 .btn {
@@ -92,6 +100,11 @@ form {
   border-radius: 20px;
   padding: 1.2rem 6.2rem;
   box-shadow: 0px 5px 10px hsla(223, 100%, 88%, 0.9);
+}
+
+.btn:hover {
+  background-color: hsl(223, 87%, 70%);
+  transition: all 0.5s;
 }
 
 .label {
@@ -126,6 +139,12 @@ i {
   vertical-align: middle;
   padding-top: 7px;
   color: var(--Blue);
+  transition: all 0.5s;
+}
+
+i:hover {
+  background-color: var(--Blue);
+  color: #fff;
 }
 
 .copy {
@@ -134,4 +153,8 @@ i {
   margin-bottom: 3rem;
   color: var(--Gray);
   font-size: 1rem;
+}
+
+.sr-only {
+  display: none;
 }
