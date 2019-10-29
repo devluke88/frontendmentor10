@@ -17,6 +17,10 @@
         flex-wrap: wrap;
     }
 
+    .btn {
+        margin-bottom: 1rem;
+    }
+
     .logo {
         height: 2.7rem;
     }
